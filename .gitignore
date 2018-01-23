@@ -1,3 +1,7 @@
+# Byte Cache
+__pycache__/
+
 # Out folder
 out/
 *.class
+*.xml
