@@ -28,10 +28,15 @@ public class TestDateTimeFormat {
         time2.set(Calendar.MINUTE, 30);
         time2.set(Calendar.SECOND, 10);
 
-        System.out.println("time1 :"+time1.get(Calendar.HOUR_OF_DAY)+"시 " +
-                time1.get(Calendar.MINUTE) +"분 " + time1.get(Calendar.SECOND) + "초");
-        System.out.println("time2 :"+time2.get(Calendar.HOUR_OF_DAY)+"시 " +
-                time2.get(Calendar.MINUTE) +"분 " + time2.get(Calendar.SECOND) + "초");
+        System.out.println("time1 :"+
+                time1.get(Calendar.HOUR_OF_DAY)+"시 " +
+                time1.get(Calendar.MINUTE) +"분 " +
+                time1.get(Calendar.SECOND) + "초");
+
+        System.out.println("time2 :"+
+                time2.get(Calendar.HOUR_OF_DAY)+"시 " +
+                time2.get(Calendar.MINUTE) +"분 " +
+                time2.get(Calendar.SECOND) + "초");
 
         long difference = Math.abs(time2.getTimeInMillis() - time1.getTimeInMillis())/1000;
         System.out.println("time1과 time2의 차이는 "+ difference +"초 입니다.");
@@ -42,7 +47,7 @@ public class TestDateTimeFormat {
             difference %= TIME_UNIT[i];
         }
 
-        System.out.println("시분초로 변환하면 " + tmp + "입니다.");
+        System.out.println("시.분.초로 변환하면 " + tmp + "입니다.");
 
     }
 
@@ -109,9 +114,7 @@ public class TestDateTimeFormat {
     public static void main(String[] args)  {
 
       showSeasonOfFour();
-
       timeDifferCalculate();
-
       dateTimeFormat();
     }
 
