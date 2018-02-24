@@ -17,7 +17,7 @@ public class DataArrayList {
     upperWeeks[6] = "SUN";
 
     for (int i=0; i<upperWeeks.length; i++) {
-      System.out.println(i + "." + upperWeeks[i] + " (" + weeks[i] + ")");
+      System.out.printf("%s.%s (%s) \n", i+1, upperWeeks[i], weeks[i]);
     }
 
   }

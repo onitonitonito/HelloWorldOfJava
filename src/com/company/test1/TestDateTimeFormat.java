@@ -1,16 +1,17 @@
-package com.company;
+package com.company.test1;
 
 import java.util.Calendar;
 
 public class TestDateTimeFormat {
     /**
+     *
      * Calendar 사용예제 참조 : https://goo.gl/Pq8FvF
-     * @param args
+     * @param
      */
 
     public static void timeDifferCalculate() {
         /**
-         * JAVA 칼랜다 사용사례 2: https://goo.gl/2StFfo
+         * JAVA 캘린더 사용사례 2: https://goo.gl/2StFfo
          */
         final int[] TIME_UNIT = {3600, 60, 1}; // 큰 단위를 앞에 놓는다.
         final String[] TIME_UNIT_NAME = {"시간 ", "분 ", "초"};

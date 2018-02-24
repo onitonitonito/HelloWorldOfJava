@@ -11,13 +11,11 @@ public class ClassAnimal {
     }
 
     public String getVoiceOfAnimal()  {
-        if (this.kind == "dog") {
+        if (this.kind.equals("dog")) {
             return "Bark! BarK!,.. I'm a Dog!";
-        }
-        else if (this.kind == "cat") {
+        } else if (this.kind.equals("cat")) {
             return "Meow Meow! I'm a Cat!";
-        }
-        else {
+        } else {
             return " '....' I'm just simply the Animal.";
         }
     }
